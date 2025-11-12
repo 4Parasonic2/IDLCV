@@ -1,2 +1,11 @@
 Project_1_Hot_dog/data/hotdog_nothotdog
 Project_1_Hot_dog/data/hotdog_nothotdog.zip
+Project3_part1/project3/dataDRIVE/test/images/*
+Project3_part1/project3/dataDRIVE/test/mask/*
+Project3_part1/project3/dataDRIVE/training/mask/*
+Project3_part1/project3/dataDRIVE/training/images/*
+Project3_part1/project3/dataPH2/*
+Project3_part1/project3/lib/*
+
+Project3_part1/project3/dataDRIVE/training/1st_manual/*
+Project3_part1/project3/__pycache__/*
