@@ -232,7 +232,7 @@ print(f"Device: {device}\n")
 # ==========================================
 # TRAINING FUNCTION
 # ==========================================
-def train_model(loss_name, loss_fn, epochs=10):
+def train_model(loss_name, loss_fn, epochs=100):
     """Train model with specified loss function"""
     print(f"\n{'='*60}")
     print(f"Training with: {loss_name}")

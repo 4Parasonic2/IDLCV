@@ -11,6 +11,7 @@ import torchvision.transforms as T
 from torch.utils.data import DataLoader, random_split
 from datasets import PH2WeakDataset
 import matplotlib.pyplot as plt
+import json
 
 
 # =====================================================
@@ -475,6 +476,9 @@ def train_weak(args):
     model_name = f"weak_unet_pos{args.pos}_neg{args.neg}.pth"
     torch.save(model.state_dict(), model_name)
     print(f"\n✓ Model saved as {model_name}\n")
+
+    with open(f'results_arrays/results_p{args.pos}_n{args.neg}.json', 'w', encoding='utf-8') as f:
+        json.dump(history, f, indent=4)
 
     # sidste metrics = "final validation metrics"
     final_metrics = evaluate(model, val_loader, device)
