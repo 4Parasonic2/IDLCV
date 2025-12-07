@@ -1,0 +1,27 @@
+Modules Release 5.3.0 (2023-05-14)
+DCC-SW: Added modules (2023-aug/XeonE5-2660v3)
+DCC-SW: Removed standard modules: /apps/dcc/etc/ModulesAlma92/modulefiles
+DCC-SW: Using gnu/12.3.0 compiler (requested)
+Unloading dcc-setup/2023-aug{%gnu:-unsafe} <S>
+  ERROR: Unload of sticky module skipped
+Loading dcc-setup/2020-aug
+  ERROR: Module cannot be loaded due to a conflict.
+    HINT: Might try "module unload dcc-setup" first.
+ERROR: Unable to locate a modulefile for 'python/3.8.5'
+ERROR: Unable to locate a modulefile for 'fftw/3.3.8'
+
+Loading libxc/4.3.4
+  Loading requirement: build-tools/1.0 gcc/12.3.0
+ERROR: Unable to locate a modulefile for 'scalapack/2.1.0'
+ERROR: Unable to locate a modulefile for 'openblas/0.3.10'
+ERROR: Unable to locate a modulefile for 'ase'
+Traceback (most recent call last):
+  File "/zhome/50/7/156708/courses/02516/IDLCV/Project4_Final/part3/CNNforproposal.py", line 638, in <module>
+    model.load_state_dict(torch.load('../../../courses/02516/best_model.pth'))
+  File "/zhome/50/7/156708/VirtualEnvs/IDLCV/lib64/python3.9/site-packages/torch/serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "/zhome/50/7/156708/VirtualEnvs/IDLCV/lib64/python3.9/site-packages/torch/serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/zhome/50/7/156708/VirtualEnvs/IDLCV/lib64/python3.9/site-packages/torch/serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '../../../courses/02516/best_model.pth'
